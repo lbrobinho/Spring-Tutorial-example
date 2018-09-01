@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="spring-mvc-configuration-tutorail:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/spring_mvc_configuration_tutorail_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="spring-mvc-configuration-tutorail/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spring-mvc-configuration-tutorail" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.3.18.RELEASE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
