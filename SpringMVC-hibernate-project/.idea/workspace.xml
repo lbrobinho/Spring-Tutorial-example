@@ -49,7 +49,7 @@
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/springdemo/Controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="693">
               <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -78,8 +78,8 @@
       <file leaf-file-name="CustomerDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/springdemo/dao/CustomerDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="193">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,12 +149,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-crud-demo-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bo/springdemo/service/CustomerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bo/springdemo/dao/CustomerDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bo/springdemo/service/CustomerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer-form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/list-customers.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bo/springdemo/Controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bo/springdemo/service/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bo/springdemo/dao/CustomerDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -613,12 +613,12 @@
       <workItem from="1536070501853" duration="6000" />
       <workItem from="1536091055559" duration="1974000" />
       <workItem from="1536107047530" duration="3864000" />
-      <workItem from="1536158872888" duration="8677000" />
+      <workItem from="1536158872888" duration="11180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17024000" />
+    <option name="totallyTimeSpent" value="19527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="979" extended-state="6" />
@@ -645,9 +645,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32941177" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79882354" visible="true" weight="0.2498618" />
       <window_info id="Web" order="2" sideWeight="0.20117646" side_tool="true" weight="0.2498618" />
       <window_info id="Learn" order="2" />
@@ -939,16 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/springdemo/dao/CustomerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/springdemo/service/CustomerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -967,8 +957,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/springdemo/Controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="693">
           <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/springdemo/dao/CustomerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -977,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/springdemo/dao/CustomerDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="193">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
