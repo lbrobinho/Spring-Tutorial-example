@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <bean id="BaseballCoach" class="com.bo.springdemo.Coach.CoachImpl.BaseballCoach"
+            >
+
+        <!-- set up Constructor injection -->
+        <constructor-arg ref="myFortuneService"/>
+    </bean>
+
+    <bean id="TrackCoach" class="com.bo.springdemo.Coach.CoachImpl.TrackCoach"
+    init-method="domyStartupStuff"
+    destroy-method="domyCleanupStuff">
+        <!-- set up Constructor injection -->
+        <constructor-arg ref="myFortuneService"/>
+    </bean>
+
+    <bean id="CricketCoach" class="com.bo.springdemo.Coach.CoachImpl.CricketCoach">
+
+        <!--set up setter injection-->
+        <property name="fortuneService" ref="myFortuneService"></property>
+
+        <property name="team" value="${foo.team}"></property>
+
+        <property name="emailAddress" value="${foo.email}"></property>
+    </bean>
+
+    <bean id="FootballCoach" class="com.bo.springdemo.Coach.CoachImpl.FootballCoach">
+
+        <!--set up constructor injection-->
+        <constructor-arg ref="RandomFortuneService"/>
+    </bean>
+
+    <!-- define the dependency -->
+    <bean id="myFortuneService" class="com.bo.springdemo.FortuneService.FortuneServiceImpl"></bean>
+
+    <bean id="RandomFortuneService" class="com.bo.springdemo.FortuneService.RandomFortuneService"/>
+</beans>
