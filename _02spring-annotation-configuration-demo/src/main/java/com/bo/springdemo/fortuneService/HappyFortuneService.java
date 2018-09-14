@@ -1,5 +1,6 @@
 package com.bo.springdemo.fortuneService;
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
