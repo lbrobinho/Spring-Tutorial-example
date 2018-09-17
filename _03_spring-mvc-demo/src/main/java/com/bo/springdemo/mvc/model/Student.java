@@ -1,10 +1,5 @@
 package com.bo.springdemo.mvc.model;
 
-import org.springframework.beans.factory.annotation.Value;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 public class Student {
 
     private String firstName;
@@ -13,6 +8,9 @@ public class Student {
 
     private String country;
 
+    private String favoriteLanguage;
+
+    private String[] operatingSystems;
 
     public Student() {
 
@@ -42,4 +40,19 @@ public class Student {
         this.country = country;
     }
 
+    public String getFavoriteLanguage() {
+        return favoriteLanguage;
+    }
+
+    public void setFavoriteLanguage(String favoriteLanguage) {
+        this.favoriteLanguage = favoriteLanguage;
+    }
+
+    public String[] getOperatingSystems() {
+        return operatingSystems;
+    }
+
+    public void setOperatingSystems(String[] operatingSystems) {
+        this.operatingSystems = operatingSystems;
+    }
 }
