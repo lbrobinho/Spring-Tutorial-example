@@ -32,7 +32,7 @@ public class MainDemoApp {
         membershipAccountDAO.addSillyMember();
 
         //call method to find the accounts
-        List<Account> accountList = accountDAO.findAccounts();
+        List<Account> accountList = accountDAO.findAccounts(false);
 
         //display the accounts
         System.out.println("\n\nMain Program: AfterReturningDemoApp");

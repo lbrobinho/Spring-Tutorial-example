@@ -1,16 +1,16 @@
 package demo.com.bo.aop.aspect;
 
+import demo.com.bo.aop.AroundHandleExceptionDemoApp;
 import demo.com.bo.aop.DAO.Account;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 
 @Component
@@ -18,6 +18,7 @@ import java.util.List;
 @Order(1)
 public class MyDemoLoggingAspect {
 
+    private  Logger logger = Logger.getLogger(getClass().getName());
 
 //    @Before("execution(public void add*())")
     @Before("demo.com.bo.aop.aspect.LuvAopExpressions.forDaoPackageNoGetterSetter()")
@@ -81,5 +82,60 @@ public class MyDemoLoggingAspect {
             //update the name on the account
             account.setName(upperName);
         }
+    }
+
+    @AfterThrowing(
+            pointcut = "execution(* demo.com.bo.aop.DAO.AccountDAO.findAccounts(..))",
+            throwing = "theExc")
+    public void afterThrowingFindAccountsAdvice(
+            JoinPoint joinPoint, Throwable theExc) {
+
+        //print out which method we are advising on
+        String method = joinPoint.getSignature().toShortString();
+        System.out.println("\n===>>> Executing @AfterThrowing on method: " + method);
+
+
+        //log the exception
+        System.out.println("\n===>>> THe exception is: " + theExc);
+    }
+
+    @After("execution(* demo.com.bo.aop.DAO.AccountDAO.findAccounts(..))")
+    public void afterTFinallyFindAccountsAdvice(JoinPoint joinPoint) {
+
+        //print out which method we are advising on
+        String method = joinPoint.getSignature().toShortString();
+        System.out.println("\n===>>> Executing @After (finally) on method: " + method);
+
+
+    }
+
+    @Around("execution(* demo.com.bo.aop.service.TrafficFortuneService.getFortune(..))")
+    public Object aroundGetFortune(
+            ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+
+        //print out which method we are advising on
+        String method = proceedingJoinPoint.getSignature().toShortString();
+        System.out.println("\n===>>> Executing @Around on method: " + method);
+
+        long start = System.currentTimeMillis();
+
+        Object result = null;
+
+        try {
+            result = proceedingJoinPoint.proceed();
+        } catch (Exception e) {
+
+            logger.warning(e.getMessage());
+
+            throw e;
+        }
+
+        long end = System.currentTimeMillis();
+
+        long duration = end - start;
+
+        System.out.println("\n====> duration is " + duration / 1000.0);
+
+        return result;
     }
 }
