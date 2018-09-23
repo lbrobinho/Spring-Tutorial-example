@@ -96,7 +96,7 @@
       <file leaf-file-name="StudentRestExceptionHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/jackson/json/demo/exception/StudentRestExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="-63">
               <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -496,16 +496,15 @@
       <workItem from="1537452477397" duration="5152000" />
       <workItem from="1537491887116" duration="1006000" />
       <workItem from="1537541074858" duration="269000" />
-      <workItem from="1537572567682" duration="5984000" />
+      <workItem from="1537572567682" duration="6108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12411000" />
+    <option name="totallyTimeSpent" value="12535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1855" height="951" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -527,9 +526,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32941177" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32846716" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32846716" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34063262" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34063262" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498618" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Learn" order="2" />
@@ -913,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bo/jackson/json/demo/exception/StudentRestExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="-63">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
