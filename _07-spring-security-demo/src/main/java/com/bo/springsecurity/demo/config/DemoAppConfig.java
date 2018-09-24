@@ -60,8 +60,9 @@ public class DemoAppConfig {
         }
 
         //log the connection props
-        logger.info(">>> jdbc.url=" + env.getProperty("jdbc.url"));
-        logger.info(">>> jdbc.user=" + env.getProperty("jdbc.user"));
+        System.out.println("Thr process is running");
+        logger.info("/n>>> jdbc.url = " + env.getProperty("jdbc.url"));
+        logger.info("/n>>> jdbc.user= " + env.getProperty("jdbc.user"));
 
         // set database connection props
         dataSource.setJdbcUrl(env.getProperty("jdbc.url"));
@@ -72,6 +73,7 @@ public class DemoAppConfig {
         dataSource.setInitialPoolSize(Integer.parseInt(env.getProperty("connection.pool.initialPoolSize")));
         dataSource.setMinPoolSize(Integer.parseInt(env.getProperty("connection.pool.minPoolSize")));
         dataSource.setMaxPoolSize(Integer.parseInt(env.getProperty("connection.pool.maxPoolSize")));
+        dataSource.setMaxIdleTime(Integer.parseInt(env.getProperty("connection.pool.maxIdleTime")));
 
         return dataSource;
     }
