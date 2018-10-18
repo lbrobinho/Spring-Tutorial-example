@@ -22,8 +22,6 @@ public class StudentController {
         //create a new student object
         Student student = new Student();
 
-
-
         //add student object to the model
         model.addAttribute("student", student);
 
